@@ -6,5 +6,5 @@ id: shoes
 label: Shoes
 traits: {  }
 locked: false
-orderItemType: null
-generateTitle: null
+orderItemType: default
+generateTitle: false

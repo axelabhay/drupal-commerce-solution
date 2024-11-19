@@ -28,4 +28,5 @@ content:
     weight: 0
     region: content
 hidden:
+  customer_profiles: true
   member_for: true

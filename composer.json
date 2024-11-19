@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^2.0",
+        "drupal/color_field": "^3.0",
         "drupal/commerce": "^2.40",
         "drupal/core-composer-scaffold": "^10.3",
         "drupal/core-project-message": "^10.3",

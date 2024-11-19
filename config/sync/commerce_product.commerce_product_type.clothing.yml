@@ -1,0 +1,14 @@
+uuid: d53925ee-3d2c-4ba5-8cae-1164717ecf49
+langcode: en
+status: true
+dependencies: {  }
+id: clothing
+label: Clothing
+traits: {  }
+locked: false
+description: 'Manage all types of clothing items.'
+variationType: clothing
+variationTypes:
+  - clothing
+multipleVariations: true
+injectVariationFields: true

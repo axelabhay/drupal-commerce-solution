@@ -1,0 +1,42 @@
+uuid: 7a8138e4-66ea-4e09-b0a4-75761b287fce
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.shoes
+    - field.field.commerce_product.shoes.body
+  module:
+    - commerce_product
+    - text
+id: commerce_product.shoes.default
+targetEntityType: commerce_product
+bundle: shoes
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -5
+    region: content
+  variations:
+    type: commerce_add_to_cart
+    label: above
+    settings:
+      combine: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+hidden:
+  created: true
+  stores: true
+  uid: true

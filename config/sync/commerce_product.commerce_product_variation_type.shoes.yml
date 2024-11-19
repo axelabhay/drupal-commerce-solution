@@ -1,0 +1,10 @@
+uuid: d05468cd-23ae-4c32-8140-11395ad61c45
+langcode: en
+status: true
+dependencies: {  }
+id: shoes
+label: Shoes
+traits: {  }
+locked: false
+orderItemType: null
+generateTitle: null

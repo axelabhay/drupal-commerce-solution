@@ -1,0 +1,14 @@
+uuid: 3772f20f-1b72-43ca-99b4-009a3b84b8e6
+langcode: en
+status: true
+dependencies: {  }
+id: shoes
+label: Shoes
+traits: {  }
+locked: false
+description: 'Manage footwear products with variations.'
+variationType: shoes
+variationTypes:
+  - shoes
+multipleVariations: true
+injectVariationFields: true

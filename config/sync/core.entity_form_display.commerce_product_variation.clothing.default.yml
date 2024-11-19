@@ -6,8 +6,11 @@ dependencies:
     - commerce_product.commerce_product_variation_type.clothing
     - field.field.commerce_product_variation.clothing.attribute_color
     - field.field.commerce_product_variation.clothing.attribute_size
+    - field.field.commerce_product_variation.clothing.field_image
+    - image.style.thumbnail
   module:
     - commerce_price
+    - image
 id: commerce_product_variation.clothing.default
 targetEntityType: commerce_product_variation
 bundle: clothing
@@ -24,6 +27,14 @@ content:
     weight: 1
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 91
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   list_price:
     type: commerce_list_price

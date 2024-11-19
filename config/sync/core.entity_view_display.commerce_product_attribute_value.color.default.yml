@@ -14,7 +14,7 @@ mode: default
 content:
   field_color_hex_code:
     type: color_field_formatter_swatch
-    label: above
+    label: hidden
     settings:
       shape: square
       width: '50'

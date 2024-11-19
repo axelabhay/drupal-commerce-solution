@@ -1,0 +1,22 @@
+uuid: a691a8e9-b7d1-47ee-a0c2-583b002932df
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.color
+    - field.storage.commerce_product_attribute_value.field_color_hex_code
+  module:
+    - color_field
+id: commerce_product_attribute_value.color.field_color_hex_code
+field_name: field_color_hex_code
+entity_type: commerce_product_attribute_value
+bundle: color
+label: 'Color Hex Code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 1
+field_type: color_field_type

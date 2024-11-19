@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - commerce_product.commerce_product_variation_type.clothing
+    - field.field.commerce_product_variation.clothing.attribute_color
     - field.field.commerce_product_variation.clothing.attribute_size
   module:
     - commerce_price
@@ -12,6 +13,12 @@ targetEntityType: commerce_product_variation
 bundle: clothing
 mode: default
 content:
+  attribute_color:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   attribute_size:
     type: options_select
     weight: 1

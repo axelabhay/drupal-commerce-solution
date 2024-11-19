@@ -1,0 +1,9 @@
+uuid: 190b9f4e-08fc-4098-a3c3-c985ea54b8b5
+langcode: en
+status: true
+dependencies: {  }
+id: retail
+label: Retail
+traits: {  }
+locked: false
+description: ''

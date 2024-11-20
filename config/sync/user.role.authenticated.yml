@@ -8,6 +8,7 @@ dependencies:
     - comment
     - commerce_checkout
     - commerce_order
+    - commerce_payment
     - commerce_product
     - contact
     - file
@@ -28,6 +29,7 @@ permissions:
   - 'access shortcuts'
   - 'access site-wide contact form'
   - 'delete own files'
+  - 'manage own commerce_payment_method'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'

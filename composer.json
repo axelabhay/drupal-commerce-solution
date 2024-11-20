@@ -19,6 +19,7 @@
         "drupal/color_field": "^3.0",
         "drupal/commerce": "^2.40",
         "drupal/commerce_paypal": "^1.8",
+        "drupal/commerce_simple_stock": "^1.2",
         "drupal/core-composer-scaffold": "^10.3",
         "drupal/core-project-message": "^10.3",
         "drupal/core-recommended": "^10.3",

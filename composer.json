@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^2.0",
+        "cweagans/composer-patches": "^1.7",
         "drupal/color_field": "^3.0",
         "drupal/commerce": "^2.40",
         "drupal/commerce_paypal": "^1.8",
@@ -34,15 +35,21 @@
     "config": {
         "allow-plugins": {
             "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
-            "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "phpstan/extension-installer": true
         },
         "sort-packages": true
     },
     "extra": {
+        "patches": {
+          "drupal/commerce_simple_stock": {
+              "Issue #3450194: Creation of dynamic property is deprecated patch.": "https://git.drupalcode.org/project/commerce_simple_stock/-/commit/523d27baf59292d1e87be608a1d8ff33e7e63353.patch"
+          }
+        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"

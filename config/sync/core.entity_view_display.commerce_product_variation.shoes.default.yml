@@ -7,6 +7,7 @@ dependencies:
     - field.field.commerce_product_variation.shoes.attribute_color
     - field.field.commerce_product_variation.shoes.attribute_size
     - field.field.commerce_product_variation.shoes.field_image
+    - field.field.commerce_product_variation.shoes.field_stock
   module:
     - commerce_price
     - image
@@ -25,6 +26,15 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_stock:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
     region: content
   list_price:
     type: commerce_price_default

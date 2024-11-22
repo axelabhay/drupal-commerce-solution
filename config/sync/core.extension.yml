@@ -41,6 +41,7 @@ module:
   history: 0
   image: 0
   inline_entity_form: 0
+  jsonapi: 0
   link: 0
   menu_link_content: 0
   menu_ui: 0
@@ -52,6 +53,7 @@ module:
   path_alias: 0
   profile: 0
   search: 0
+  serialization: 0
   shortcut: 0
   state_machine: 0
   system: 0

@@ -26,6 +26,7 @@ module:
   commerce_store: 0
   commerce_tax: 0
   config: 0
+  consumers: 0
   contact: 0
   contextual: 0
   datetime: 0
@@ -58,6 +59,7 @@ module:
   search: 0
   serialization: 0
   shortcut: 0
+  simple_oauth: 0
   state_machine: 0
   system: 0
   taxonomy: 0

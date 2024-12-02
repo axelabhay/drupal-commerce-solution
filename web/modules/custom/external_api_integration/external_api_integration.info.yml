@@ -1,0 +1,5 @@
+name: 'External API Integration'
+type: module
+description: 'Custom module integrating external APIs.'
+core_version_requirement: ^10 || ^11
+package: Custom

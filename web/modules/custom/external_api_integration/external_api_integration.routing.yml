@@ -1,0 +1,7 @@
+external_api_integration.form:
+  path: '/external-api-integration/github'
+  defaults:
+    _form: '\Drupal\external_api_integration\Form\GithubApiIntegrationForm'
+    _title: 'GitHub API Integration'
+  requirements:
+    _permission: 'access content'

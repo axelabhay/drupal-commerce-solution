@@ -1,0 +1,14 @@
+uuid: 3babb972-05aa-4130-8827-156bddf07b49
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.page
+  module:
+    - node
+id: react_user
+label: 'React User'
+weight: 4
+is_admin: null
+permissions:
+  - 'create page content'

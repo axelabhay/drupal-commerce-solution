@@ -1,0 +1,14 @@
+uuid: 0bbd81be-0078-4261-8ea4-54cfedecd96e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.react_user
+  module:
+    - user
+id: user_remove_role_action.react_user
+label: 'Remove the React User role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: react_user

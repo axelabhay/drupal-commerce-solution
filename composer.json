@@ -19,6 +19,7 @@
         "cweagans/composer-patches": "^1.7",
         "drupal/color_field": "^3.0",
         "drupal/commerce": "^2.40",
+        "drupal/commerce_api": "^1.0@RC",
         "drupal/commerce_paypal": "^1.8",
         "drupal/commerce_simple_stock": "^1.2",
         "drupal/core-composer-scaffold": "^10.3",

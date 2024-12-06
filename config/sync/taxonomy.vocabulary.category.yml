@@ -1,0 +1,9 @@
+uuid: 88064590-3c6d-4a8f-a683-a4545afb1dbb
+langcode: en
+status: true
+dependencies: {  }
+name: Category
+vid: category
+description: 'E-commerce product categories'
+weight: 0
+new_revision: false

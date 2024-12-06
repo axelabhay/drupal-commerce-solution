@@ -5,6 +5,8 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.clothing
     - field.field.commerce_product.clothing.body
+    - field.field.commerce_product.clothing.field_brand
+    - field.field.commerce_product.clothing.field_category
   module:
     - commerce_product
     - text
@@ -19,6 +21,22 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 11
+    region: content
+  field_brand:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 13
     region: content
   title:
     type: string
@@ -38,5 +56,6 @@ content:
     region: content
 hidden:
   created: true
+  search_api_excerpt: true
   stores: true
   uid: true

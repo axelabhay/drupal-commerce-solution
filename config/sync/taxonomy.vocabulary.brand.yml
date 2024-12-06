@@ -1,0 +1,9 @@
+uuid: b1cca11c-c126-4587-855a-40ac469fdf48
+langcode: en
+status: true
+dependencies: {  }
+name: Brand
+vid: brand
+description: 'E-commerce product brands'
+weight: 0
+new_revision: false

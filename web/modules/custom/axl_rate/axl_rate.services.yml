@@ -1,0 +1,5 @@
+services:
+  axl_rate.manager:
+    class: Drupal\axl_rate\RatingService
+    arguments: ['@database']
+

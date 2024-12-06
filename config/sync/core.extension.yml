@@ -4,6 +4,7 @@ module:
   address: 0
   announcements_feed: 0
   automated_cron: 0
+  axl_rate: 0
   basic_auth: 0
   big_pipe: 0
   block: 0

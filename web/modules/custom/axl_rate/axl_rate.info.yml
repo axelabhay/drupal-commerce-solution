@@ -1,0 +1,6 @@
+name: AXL Rate
+type: module
+description: 'Provides functionality for Rate.'
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:field

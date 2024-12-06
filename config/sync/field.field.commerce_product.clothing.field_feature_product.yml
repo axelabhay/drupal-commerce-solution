@@ -1,0 +1,21 @@
+uuid: 2bb118dc-c5bc-4406-b733-7ea75ee83e3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.clothing
+    - field.storage.commerce_product.field_feature_product
+id: commerce_product.clothing.field_feature_product
+field_name: field_feature_product
+entity_type: commerce_product
+bundle: clothing
+label: 'Feature Product'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

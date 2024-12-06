@@ -1,0 +1,21 @@
+uuid: 7178b0fd-735a-4cc0-af61-bfbb519c5859
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.product_comments
+    - field.storage.comment.field_reaction
+  module:
+    - like_dislike
+id: comment.product_comments.field_reaction
+field_name: field_reaction
+entity_type: comment
+bundle: product_comments
+label: Reaction
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: like_dislike

@@ -4,12 +4,17 @@ status: true
 dependencies:
   config:
     - commerce_product.commerce_product_type.clothing
+    - core.entity_view_display.comment.product_comments.default
     - field.field.commerce_product.clothing.body
     - field.field.commerce_product.clothing.field_brand
     - field.field.commerce_product.clothing.field_category
     - field.field.commerce_product.clothing.field_feature_product
+    - field.field.commerce_product.clothing.field_product_average_rating
+    - field.field.commerce_product.clothing.field_product_review
   module:
+    - comment
     - commerce_product
+    - fivestar
     - text
 id: commerce_product.clothing.default
 targetEntityType: commerce_product
@@ -48,6 +53,25 @@ content:
       format_custom_true: ''
     third_party_settings: {  }
     weight: 14
+    region: content
+  field_product_average_rating:
+    type: fivestar_stars
+    label: above
+    settings:
+      text_format: average
+      display_format: average
+      fivestar_widget: basic
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_product_review:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 16
     region: content
   title:
     type: string

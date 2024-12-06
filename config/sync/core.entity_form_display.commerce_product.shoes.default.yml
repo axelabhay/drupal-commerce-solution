@@ -8,8 +8,12 @@ dependencies:
     - field.field.commerce_product.shoes.field_brand
     - field.field.commerce_product.shoes.field_category
     - field.field.commerce_product.shoes.field_feature_product
+    - field.field.commerce_product.shoes.field_product_average_rating
+    - field.field.commerce_product.shoes.field_product_review
   module:
+    - comment
     - commerce
+    - fivestar
     - path
     - text
 id: commerce_product.shoes.default
@@ -59,6 +63,21 @@ content:
     region: content
     settings:
       display_label: true
+    third_party_settings: {  }
+  field_product_average_rating:
+    type: fivestar_stars
+    weight: 94
+    region: content
+    settings:
+      text_format: none
+      display_format: average
+      fivestar_widget: basic
+    third_party_settings: {  }
+  field_product_review:
+    type: comment_default
+    weight: 95
+    region: content
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path

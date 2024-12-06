@@ -34,6 +34,9 @@ class GithubApiIntegrationForm extends FormBase {
       '#value' => $this->t('Submit'),
     ];
 
+    // Attach the custom library.
+    $form['#attached']['library'][] = 'external_api_integration/external_api_integration'; 
+
     return $form;
   }
 

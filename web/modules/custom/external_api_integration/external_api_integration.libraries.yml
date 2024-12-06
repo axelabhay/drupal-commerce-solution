@@ -1,0 +1,8 @@
+external_api_integration:
+  version: VERSION
+  js:
+    js/external_api_integration.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once

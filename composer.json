@@ -25,8 +25,10 @@
         "drupal/core-composer-scaffold": "^10.3",
         "drupal/core-project-message": "^10.3",
         "drupal/core-recommended": "^10.3",
+        "drupal/facets": "^2.0",
         "drupal/inline_entity_form": "^3.0@RC",
         "drupal/jsonapi_extras": "^3.26",
+        "drupal/jsonapi_search_api": "^1.0@RC",
         "drupal/simple_oauth": "^5.2",
         "drush/drush": "^13.3"
     },

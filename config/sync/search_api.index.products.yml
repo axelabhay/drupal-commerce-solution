@@ -1,0 +1,209 @@
+uuid: 9f6ec341-739d-42f3-8230-f782d67a777e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commerce_product.body
+    - field.storage.commerce_product.field_brand
+    - field.storage.commerce_product.field_category
+    - field.storage.commerce_product.field_feature_product
+    - field.storage.commerce_product.field_product_average_rating
+    - field.storage.commerce_product.field_product_review
+    - field.storage.commerce_product_variation.attribute_color
+    - field.storage.commerce_product_variation.attribute_size
+    - search_api.server.default_server
+  module:
+    - commerce_product
+id: products
+name: Products
+description: ''
+read_only: false
+field_settings:
+  attribute_color:
+    label: 'Variations » Product variation » Color'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:attribute_color'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product_variation.attribute_color
+      module:
+        - commerce_product
+  attribute_size:
+    label: 'Variations » Product variation » Size'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:attribute_size'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product_variation.attribute_size
+      module:
+        - commerce_product
+  body:
+    label: Body
+    datasource_id: 'entity:commerce_product'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product.body
+  changed:
+    label: Changed
+    datasource_id: 'entity:commerce_product'
+    property_path: changed
+    type: date
+    dependencies:
+      module:
+        - commerce_product
+  created:
+    label: Created
+    datasource_id: 'entity:commerce_product'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - commerce_product
+  currency_code:
+    label: 'Variations » Product variation » Price » Currency code'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:price:currency_code'
+    type: string
+    dependencies:
+      module:
+        - commerce_product
+  field_brand:
+    label: Brand
+    datasource_id: 'entity:commerce_product'
+    property_path: field_brand
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_brand
+  field_category:
+    label: Category
+    datasource_id: 'entity:commerce_product'
+    property_path: field_category
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_category
+  field_feature_product:
+    label: 'Feature Product'
+    datasource_id: 'entity:commerce_product'
+    property_path: field_feature_product
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_feature_product
+  field_product_average_rating:
+    label: 'Product Average Rating'
+    datasource_id: 'entity:commerce_product'
+    property_path: field_product_average_rating
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_product_average_rating
+  field_product_review:
+    label: 'Product Review'
+    datasource_id: 'entity:commerce_product'
+    property_path: field_product_review
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_product_review
+  price:
+    label: 'Variations » Product variation » Price » Number'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:price:number'
+    type: decimal
+    dependencies:
+      module:
+        - commerce_product
+  product_id:
+    label: ID
+    datasource_id: 'entity:commerce_product'
+    property_path: product_id
+    type: integer
+    dependencies:
+      module:
+        - commerce_product
+  status:
+    label: Published
+    datasource_id: 'entity:commerce_product'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - commerce_product
+  stores:
+    label: Stores
+    datasource_id: 'entity:commerce_product'
+    property_path: stores
+    type: integer
+    dependencies:
+      module:
+        - commerce_product
+  title:
+    label: Title
+    datasource_id: 'entity:commerce_product'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - commerce_product
+  type:
+    label: 'Product type'
+    datasource_id: 'entity:commerce_product'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - commerce_product
+  uid:
+    label: Author
+    datasource_id: 'entity:commerce_product'
+    property_path: uid
+    type: integer
+    dependencies:
+      module:
+        - commerce_product
+  uuid:
+    label: UUID
+    datasource_id: 'entity:commerce_product'
+    property_path: uuid
+    type: string
+    dependencies:
+      module:
+        - commerce_product
+  variations:
+    label: Variations
+    datasource_id: 'entity:commerce_product'
+    property_path: variations
+    type: integer
+    dependencies:
+      module:
+        - commerce_product
+datasource_settings:
+  'entity:commerce_product':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  delete_on_fail: true
+  index_directly: true
+  track_changes_in_references: true
+server: default_server

@@ -1,0 +1,9 @@
+uuid: 29bea6c0-2ac9-4b3b-825f-1079f1cd63cc
+langcode: en
+status: true
+dependencies: {  }
+id: jsonapi_search_api_facets__products
+name: 'jsonapi_search_api_facets:products'
+filter_key: filter
+url_processor: json_api
+breadcrumb: {  }

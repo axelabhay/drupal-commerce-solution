@@ -31,6 +31,7 @@
         "drupal/jsonapi_extras": "^3.26",
         "drupal/jsonapi_search_api": "^1.0@RC",
         "drupal/like_dislike": "^2.4",
+        "drupal/restui": "^1.22",
         "drupal/simple_oauth": "^5.2",
         "drupal/votingapi": "^3.0@beta",
         "drush/drush": "^13.3"

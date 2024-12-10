@@ -6,6 +6,7 @@ dependencies:
     - basic_auth
     - node
     - serialization
+    - user
 _core:
   default_config_hash: 6ONvVCbif1qZnRfa8XmPzMwNKLDhF6K7eTrTgIVtP5E
 id: entity.node
@@ -15,9 +16,10 @@ configuration:
   methods:
     - GET
     - POST
-    - PATCH
     - DELETE
+    - PATCH
   formats:
     - json
   authentication:
     - basic_auth
+    - cookie
